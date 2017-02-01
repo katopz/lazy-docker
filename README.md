@@ -1,6 +1,13 @@
+# To remove existing container by image.
+```shell
+docker rm -f $(docker ps -a -q --filter ancestor=rabbotio/nap-app)
+```
+
+---
+
 [Source](https://codefresh.io/blog/everyday-hacks-docker/ "Permalink to Everyday Hacks for Docker - Codefresh")
 
-## Cleaning Up
+### Cleaning Up
 > After working with Docker for some time, you start accumulating development junk: unused volumes, networks, exited containers and unused images.
 
 ```shell
