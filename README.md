@@ -1,4 +1,4 @@
-# To remove existing container by image.
+### To remove existing container by image.
 ```shell
 docker rm -f $(docker ps -a -q --filter ancestor=rabbotio/nap-app)
 ```
