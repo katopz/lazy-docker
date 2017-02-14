@@ -1,3 +1,6 @@
+### Gotcha Dockerfile (will convert to md later)
+- [ ] http://kimh.github.io/blog/en/docker/gotchas-in-writing-dockerfile-en/
+
 ### To understand volumes (will convert to md later)
 - http://www.tricksofthetrades.net/2016/03/14/docker-data-volumes/
 
