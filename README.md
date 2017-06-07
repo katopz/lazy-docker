@@ -4,6 +4,16 @@
 ### To understand volumes (will convert to md later)
 - http://www.tricksofthetrades.net/2016/03/14/docker-data-volumes/
 
+#### To remove all containers
+```shell
+docker rm $(docker ps -a -q)
+```
+
+#### To remove all images
+```shell
+docker rmi $(docker images -q)
+```
+
 ### To remove existing container by image.
 ```shell
 docker rm -f $(docker ps -a -q --filter ancestor=rabbotio/nap-app)
