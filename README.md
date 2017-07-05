@@ -4,6 +4,11 @@
 ### To understand volumes (will convert to md later)
 - http://www.tricksofthetrades.net/2016/03/14/docker-data-volumes/
 
+#### To get total size of image
+```shell
+echo $(docker image inspect rabbotio/nap -f {{.Size}}) | awk '{$1/=1048576;printf "%.2fMB\n",$1}'
+```
+
 #### To remove all containers
 ```shell
 docker rm $(docker ps -a -q)
